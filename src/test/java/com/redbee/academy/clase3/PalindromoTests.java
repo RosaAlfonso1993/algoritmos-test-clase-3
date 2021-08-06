@@ -19,4 +19,9 @@ public class PalindromoTests {
     void testPalindromoConEspaciosYMayuscula() {
         Assertions.assertTrue(Palindromo.esPalindromo("Anita lava la tina"));
     }
+
+    @Test
+    void testPalindromoHola() {
+        Assertions.assertFalse(Palindromo.esPalindromo("hola"));
+    }
 }

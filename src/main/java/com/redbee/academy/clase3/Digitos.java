@@ -9,7 +9,15 @@ public class Digitos {
      * @return
      */
     public static Integer resolver(Long numero) {
-        //TODO: implementar
-        return null;
+        Integer cantDigitos = 1;
+        long digitosAConvertir = numero;
+        if(numero > 0){
+            cantDigitos = 0;
+            while (digitosAConvertir > 0){
+                digitosAConvertir = digitosAConvertir / 10;
+                cantDigitos++;
+            }
+        }
+        return cantDigitos;
     }
 }
